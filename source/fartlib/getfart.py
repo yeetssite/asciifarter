@@ -11,7 +11,7 @@ new_art = ''
 error_opener = str("[31m"+str(__file__)+": Error:")
 # Open status.xml and add some of it's contents to the art_list
 try:
-    with request.urlopen("https://yeetshttps.github.io/asciiFarter/status.xml") as status_file:
+    with request.urlopen("https://yeetssite.github.io/asciifarter/status.xml") as status_file:
         status_text = status_file.read().decode('utf-8')
         status = bs4.BeautifulSoup(status_text, 'xml')
         art_names = status.find('asciiArtsNames')
@@ -41,7 +41,7 @@ class random_art:
     def __init__(self, randomness=len(art_list)):
         for x in range(randomness):
             self.name = random.choice(art_list) # choose a random art's filename from the art_list
-        with request.urlopen('https://yeetssite.github.io/'+self.name) as art_file: # open that random art's url
+        with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file: # open that random art's url
             self.File = art_file # save the file-like object as an attribute
             self.text = art_file.read().decode('utf-8') # convert the file-like object into a string
 
@@ -56,7 +56,7 @@ class random_art:
 class newest_art: 
     def __init__(self):
         self.name = new_art
-        with request.urlopen('https://yeetssite.github.io/'+self.name) as art_file:
+        with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file:
             self.File = art_file
             self.text = art_file.read().decode('utf-8')
 
@@ -86,12 +86,12 @@ class find_art:
 
         if self.found:
             try:
-                with request.urlopen('https://yeetssite.github.io/'+self.name) as art_file:
+                with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file:
                     self.File = art_file
                     self.text = art_file.read().decode('utf-8')
             except error.URLError:
                 print(error_opener)
-                raise self.SearchError("Couldn't open the art from <https://yeetssite.github.io/"+self.name+">, maybe it doesn't exist?")
+                raise self.SearchError("Couldn't open the art from <https://yeetssite.github.io/asciifarter/"+self.name+">, maybe it doesn't exist?")
         elif not self.found:
             print('[1;34m(i) [30mfind_art: art [37m"'+self.search+'"[30m not found.[m')
     def poop(self, line_delay=0.000001):
