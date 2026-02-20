@@ -1,0 +1,60 @@
+# AsciiFarter 2
+###### Release version `2.2` alpha
+###### Document revision from `02.20.2026`
+
+### "2"? what? theres a first one?
+Yes, and its available at [yeetshttps/asciiFarter](https://github.com/yeetshttps/asciiFarter/)
+
+### What does it do?
+AsciiFarter takes Ascii Art from [a website](https://yeetssite.github.io/asciiArt/) and prints it in your terminal.
+
+It does this by looking at a file named [`status.xml`](https://yeetshttps.github.io/asciiFarter/status.xml) and uses the information from the file to get a list of URLs for Ascii Arts and other various info.
+
+AsciiFarter 2 is designed to be able to be integrated in things like Discord bots or other random scripts, see [`fartlib/README.md`](./fartlib/README.md) for more info about this.
+
+### How do I use it?
+To run, AsciiFarter needs the Python modules `bs4`(BeatifulSoup) and `lxml` installed. This should usually be as easy as running pip to install them:
+
+```bash
+~/$ pip3 install bs4 lxml
+```
+
+Then, getting asciiFarter on your system so you can run it should be as simple as cloning the repo:
+
+```bash
+~/$ git clone https://github.com/yeetssite/asciifarter.git
+```
+
+Then running asciiFarter from the repo:
+
+```bash
+~/$ python ./asciifarter/asciiFarter2.py
+```
+
+By default, AsciiFarter prints a random Ascii Art when you run it. To view what AsciiFarter can do, run:
+
+```bash
+~/$ python ./asciifarter/asciiFarter2.py help
+```
+
+### Other stuff
+Troubles? Bugs? [Open an issue](https://github.com/yeetssite/asciifarter/issues).
+
+This repo and it's code are licensed under GPL-3.0. See [here](./LICENSE.md) or https://www.gnu.org/licenses/gpl-3.0:
+
+```
+        AsciiFarter: make your terminal shart™
+        Copyright (C) 2024-2026 Jacob Haché(mangolover1899, itsyeetsup)
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
