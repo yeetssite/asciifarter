@@ -6,35 +6,48 @@
 Yes, and its available at [yeetshttps/asciiFarter](https://github.com/yeetshttps/asciiFarter/)
 
 ### What does it do?
-AsciiFarter takes Ascii Art from [a website](https://yeetssite.github.io/asciiArt/) and prints it in your terminal.
+AsciiFarter takes Ascii Art from [a website](https://yeetssite.github.io/asciifarter/asciiArt/) and prints it in your terminal.
 
 It does this by looking at a file named [`status.xml`](https://yeetshttps.github.io/asciiFarter/status.xml) and uses the information from the file to get a list of URLs for Ascii Arts and other various info.
 
-AsciiFarter 2 is designed to be able to be integrated in things like Discord bots or other random scripts, see [`fartlib/README.md`](./fartlib/README.md) for more info about this.
+AsciiFarter 2 is designed to be able to be integrated in things like Discord bots or other random scripts, see [`source/fartlib/README.md`](./source/fartlib/README.md) for more info about this.
 
 ### How do I use it?
 To run, AsciiFarter needs the Python modules `bs4`(BeatifulSoup) and `lxml` installed. This should usually be as easy as running pip to install them:
 
 ```bash
-~/$ pip3 install bs4 lxml
+pip3 install bs4 lxml
 ```
 
-Then, getting asciiFarter on your system so you can run it should be as simple as cloning the repo:
+##### Getting AsciiFarter on your system so you can run it 
+Right now, you can only run it by cloning the repo:
 
 ```bash
-~/$ git clone https://github.com/yeetssite/asciifarter.git
+git clone https://github.com/yeetssite/asciifarter.git
 ```
 
-Then running asciiFarter from the repo:
+Hopefully, if I remember, there will eventually be an installer script that lets you actually install AsciiFarter to run it outside of the repo.
+
+##### To run AsciiFarter from the repo
+
+Go to the folder with AsciiFarter in it:
 
 ```bash
-~/$ python ./asciifarter/asciiFarter2.py
+cd ./asciifarter/source/
 ```
+
+Then, run AsciiFarter:
+
+```bash
+python ./asciiFarter2.py
+```
+
+##### What AsciiFarter will do
 
 By default, AsciiFarter prints a random Ascii Art when you run it. To view what AsciiFarter can do, run:
 
 ```bash
-~/$ python ./asciifarter/asciiFarter2.py help
+~/$ python ./asciifarter/source/asciiFarter2.py help
 ```
 
 ### Other stuff
