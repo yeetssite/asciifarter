@@ -79,7 +79,7 @@ if os.path.isdir(art_directory):
         for art in art_list:
             stats.write('       <name>'+art+'</name>\n')
         stats.write('   </asciiArtsNames>\n\n')
-        stats.write('   <latestText>'+latest_art+'</latestText>\n\n')
+        stats.write('   <newestArt>'+latest_art+'</newestArt>\n\n')
         stats.write('</status>')
 
 
