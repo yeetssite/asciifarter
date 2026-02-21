@@ -17,7 +17,7 @@ else
 fi
 fi
 echo "---" > $IN
-echo -e "title: Directory Index: $1" >> $IN
+echo -e 'title: "Directory Index"' >> $IN
 echo "layout: default" >> $IN
 echo "---" >> $IN
 
