@@ -16,4 +16,9 @@ else
 	exit 0
 fi
 fi
-tree $1 -H "$3" -L 1 -I index.html --dirsfirst --houtro "" --noreport --hintro "" > $IN
+echo "---" > $IN
+echo -e "title: Directory Index: $1" >> $IN
+echo "layout: default" >> $IN
+echo "---" >> $IN
+
+tree $1 -H "$3" -L 1 -I index.html --dirsfirst --houtro "" --noreport --hintro "" >> $IN
