@@ -102,7 +102,7 @@ class find_art:
             sleep(line_delay)
 
 class list_art:
-    def __init__(self, line_delay=0.000001):
+    def __init__(self, line_delay=0.01):
         self.count = 0
         for name in art_list:
             self.count += 1
