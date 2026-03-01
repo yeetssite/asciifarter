@@ -1,6 +1,6 @@
 # AsciiFarter 2
-###### Release version `2.2` alpha
-###### Document revision from `02.20.2026`
+###### Release version `2.3` alpha
+###### Document revision from `02.28.2026`
 
 ### "2"? what? theres a first one?
 Yes, and its available at [yeetshttps/asciiFarter](https://github.com/yeetshttps/asciiFarter/)

@@ -5,6 +5,7 @@ from time import sleep # for stdout animation work
 from sys import stdout # to work with stdout
 from sys import exit # ensure exit() actually exits
 from urllib import error # deal with url errors
+import os
 
 art_list = [] # Initiate art_list and newest_art here because python is gay and is obsessed with local object errors
 new_art = ''
@@ -39,12 +40,23 @@ except error.URLError: # Check for internet if connection failed
 # Get a random art from the art_list:
 class random_art:
     def __init__(self, randomness=len(art_list)):
-        for x in range(randomness):
-            self.name = random.choice(art_list) # choose a random art's filename from the art_list
-        with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file: # open that random art's url
-            self.File = art_file # save the file-like object as an attribute
-            self.text = art_file.read().decode('utf-8') # convert the file-like object into a string
-
+        check_art_size = True
+        while check_art_size:
+            for x in range(randomness):
+                self.name = random.choice(art_list) # choose a random art's filename from the art_list
+            with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file: # open that random art's url
+                self.File = art_file # save the file-like object as an attribute
+                self.text = art_file.read().decode('utf-8') # convert the file-like object into a string
+            terminal_width = os.get_terminal_size().columns
+            reroll_art = False
+            for line in self.text.splitlines():
+                if len(line) > terminal_width:
+                    reroll_art = True
+            if reroll_art:
+                continue
+            else:
+                break
+        
     def poop(self, line_delay=0.000001): # print the art asciiFarter style
         for line in self.text: # iterate art text line-by-line
             stdout.write(line) # write(print) the line to stdout (print adds extra newlines)
@@ -94,19 +106,30 @@ class find_art:
                 raise self.SearchError("Couldn't open the art from <https://yeetssite.github.io/asciifarter/"+self.name+">, maybe it doesn't exist?")
         elif not self.found:
             print('[1;34m(i) [30mfind_art: art [37m"'+self.search+'"[30m not found.[m')
-    def poop(self, line_delay=0.000001):
+    def poop(self, line_delay=0.00001, char_delay=0.001):
+        if len(self.text) > 1000:
+            line_delay = line_delay / 10000
+            char_delay = char_delay / 1000
         for line in self.text:
-            stdout.write(line)
-            sleep(line_delay)
+            for char in line:
+                stdout.write(char)
+                stdout.flush()
+                sleep(char_delay)
             stdout.flush()
             sleep(line_delay)
 
 class list_art:
-    def __init__(self, line_delay=0.01):
+    def __init__(self, line_delay=0.001, char_delay=0.01):
         self.count = 0
         for name in art_list:
             self.count += 1
-            print(str(self.count)+'. '+name.lower().replace('asciiart/', ''))
+            stdout.write('Art #'+str(self.count)+': ')
+            stdout.flush()
+            for char in name.replace('asciiArt/',''):
+                stdout.write(char)
+                stdout.flush()
+                sleep(char_delay)
+            stdout.write('\n')
             sleep(line_delay)
         print("Total amount of ascii arts: "+str(self.count))
         sleep(line_delay)
