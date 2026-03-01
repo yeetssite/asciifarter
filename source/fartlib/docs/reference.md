@@ -65,7 +65,7 @@ Prints the art in AsciiFarter style, replaceable using [`stdout`](https://docs.p
 
 ---
 
-### `.find_art()
+### `.find_art()`
 ```python3
 class getfart.find_art(art=None)
 ```
