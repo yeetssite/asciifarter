@@ -3,7 +3,7 @@
 #
 # This version is simply a proof of concept, and only exists
 # to help me figure out how to make this shih actually work.
-import getfart
+from fartlib import getfart
 import os
 import time
 # Temporarily fixed art directory due to making this on a

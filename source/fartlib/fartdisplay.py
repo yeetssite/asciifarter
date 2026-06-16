@@ -45,3 +45,29 @@ def random_art():
             stdout.write(line)
             time.sleep(0.0005)
             stdout.flush()
+
+def find(art):
+    art = art.lower()
+    if ".txt" not in art:
+        art = art + ".txt"
+    print('[33mSearching for [1;34m"'+art+'"[0;33m...[m')
+    art_found = False
+    item_match = ''
+    for item in local_art:
+        if art in item.lower():
+            if item.lower() in art:
+                art_found = True
+                item_match = item
+                break
+    if art_found:
+        print('[47;1;34m'+item_match+':[0m')
+        with open(FartDir+item_match) as art:
+            for line in art.read():
+                stdout.write(line)
+                time.sleep(0.0005)
+                stdout.flush
+    else:
+        print('[31mSorry, but I was unable to find [1;34m"'+art+'"[0;31m.[m')
+        
+
+
