@@ -15,9 +15,11 @@ for item in local_art:
 with open(FartDir+"status.xml") as status:
     status = status.read()
     fartSoup = BeautifulSoup(status, 'xml')
-    newest_art_name = fartSoup.find('NewestArt').text
-    newest_art_name = newest_art_name.replace('asciiArt/', '')
-
+    try:
+        newest_art_name = fartSoup.find('NewestArt').text
+        newest_art_name = newest_art_name.replace('asciiArt/', '')
+    except:
+        newest_art_name = 'petah.txt' # fall back to peter griffin if the newest art couldnt be loaded
 class newest_art():
     def get_art(self, art=FartDir+newest_art_name):
         with open(art) as art:

@@ -12,6 +12,10 @@ import time
 # Termux, which is basically Linux on an Android phone, MacOS
 # and Windows).
 FartDir = os.environ["HOME"]+"/Library/.asciiFarter/art/"
+local_arts = os.listdir(FartDir)
+for art in local_arts:
+    if '.txt' not in art:
+        local_arts.remove(art)
 def art_installer():
     # Downloads ascii arts to your device.
     broken = False
@@ -20,12 +24,8 @@ def art_installer():
             print("Installing art to "+FartDir)
             # keep XML file with art attributes and only
             # open it when needed.
-            newest_art = getfart.newest_art()
-            with open(FartDir+"status.xml", 'w') as status:
-                status.write("<LocalArt>\n")
-                status.write("  <NewestArt>"+newest_art.name+"</NewestArt>")
-                status.write("\n</LocalArt>")
-            local_arts = os.listdir(FartDir)
+            status = open(FartDir+"status.xml", 'w')
+            status.write("<LocalArt>\n")
             # Check remote arts against list of existing local
             # arts:
             for r_art in getfart.art_list:
@@ -46,7 +46,31 @@ def art_installer():
                         for line in l_art.text:
                             artFile.write(line)
                     print(r_art+" [32mInstalled.[m")
+            status.write('  <NewestArt'+getfart.newest_art().name+'</NewestArt>')
+            status.write('</LocalArt>')
+            status.close()
+
             broken = True
         except FileNotFoundError:
             os.mkdir(FartDir)
             continue
+
+def add(art, prompt=True):
+    if art in local_arts:
+        if '.txt' not in art:
+            art = art + '.txt'
+        if prompt == True:
+            confirm_add = input(art+': Would you like to set this as the Newest Ascii Art? [Y/n]: ')
+            confirm_add = confirm_add.strip(' ').lower()
+            if confirm_add == '' or confirm_add == 'y':
+                confirm_add = True
+        else: 
+            confirm_add = False
+        if confirm_add:
+            with open(FartDir+'status.xml', 'w') as status:
+                status.write('<LocalArt>\n')
+                status.write('  <NewestArt>'+art+'</NewestArt>\n')
+                status.write('</LocalArt>')
+            print('[A[2K[1;32mArt added.[m')
+        else:
+            print('[A[2K[1;30mArt not added.[m')
