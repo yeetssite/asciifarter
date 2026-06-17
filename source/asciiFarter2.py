@@ -1,8 +1,9 @@
 #!/usr/bin/python
-from fartlib import getfart, localfart, fartdisplay, version, copyright
+from fartlib import getfart, localfart, fartrelay, version, copyright
 from sys import argv, exit
 from os import path
 import urllib
+
 asciifart_version = 2.4
 
 user_passed_args = False
@@ -30,7 +31,7 @@ if user_passed_args:
             newest_art = True
             break
         elif argls[i].lower() == "version":
-            print("AsciiFarter Version "+str(asciifart_version)+" Running on FartLib v"+str(version)+".\n")
+            print("AsciiFarter Version "+str(asciifart_version)+" Running on FartLib v"+str(version)+".")
             print(copyright)
             exit(0)
         elif argls[i].lower() == "update":
@@ -39,25 +40,21 @@ if user_passed_args:
 
         elif argls[i].lower() == "help":
             print("""AsciiFarter 2 | Help
-            USAGE: asciiFarter2 [COMMAND]
+USAGE: asciiFarter2 [COMMAND]
 
-            COMMANDs:
-            COMMAND | DESCRIPTION
-            * random | Displays a random ascii art.
-            * newest | Displays the newest ascii art.
-            * find <ART> | Finds and displays the ascii art
-                           named <ART>.
-            * update | Update your local art library.
-            * version | Displays version and copyright info.
-            * help | Displays this help message.""")
+COMMANDs:
+    COMMAND | DESCRIPTION
+    * random | Displays a random ascii art.
+    * newest | Displays the newest ascii art.
+    * find <ART> | Finds and displays the ascii art
+                   named <ART>.
+    * update | Update your local art library.
+    * version | Displays version and copyright info.
+    * help | Displays this help message.""")
             exit(0)
         elif argls[i].startswith("-"):
             continue
         else:
             print(argls[i]+": AsciiFarter doesn't know that Command.")
 else:
-    try:
-        fart = getfart.random_art()
-        fart.poop()
-    except AttributeError:
-        fartdisplay.random_art()
+       

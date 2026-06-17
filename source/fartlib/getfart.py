@@ -56,10 +56,13 @@ class random_art:
 class newest_art: 
     def __init__(self):
         self.name = new_art
-        with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file:
-            self.File = art_file
-            self.text = art_file.read().decode('utf-8')
-
+        try:
+            with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file:
+                self.File = art_file
+                self.text = art_file.read().decode('utf-8')
+        except:
+            pass # pass so an attribute error gets thrown (for
+                 # consistancy ykyk)
     def poop(self, line_delay=0.0005):
         for line in self.text:
             stdout.write(line)
