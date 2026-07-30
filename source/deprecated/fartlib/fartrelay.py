@@ -4,7 +4,7 @@ import time
 import random
 screen_size = os.get_terminal_size()
 screen_chars = screen_size.lines * screen_size.columns
-FartDir = os.environ['HOME'] + "/Library/.asciiFarter/art/"
+FartDir = os.environ['HOME'] + "/Documents/.asciiFarter/art/"
 local_art = os.listdir(FartDir)
 for item in local_art:
     if item.endswith('.txt'):

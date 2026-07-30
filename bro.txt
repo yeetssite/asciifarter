@@ -1,0 +1,264 @@
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 0.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+1.0.168.192.in-addr.arpa	name = hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 2.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 3.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 4.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 5.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 6.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 7.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 8.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 9.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+10.0.168.192.in-addr.arpa	name = JudeTV.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+11.0.168.192.in-addr.arpa	name = Jheninay.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+12.0.168.192.in-addr.arpa	name = John-Christian-s-S24.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+13.0.168.192.in-addr.arpa	name = RE550.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+14.0.168.192.in-addr.arpa	name = G.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+15.0.168.192.in-addr.arpa	name = KS225.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+16.0.168.192.in-addr.arpa	name = decoMeshX50Pro.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+17.0.168.192.in-addr.arpa	name = Judes-iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+18.0.168.192.in-addr.arpa	name = V2237.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+19.0.168.192.in-addr.arpa	name = Gulmina-s-S22.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+20.0.168.192.in-addr.arpa	name = Jheninay-2.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+21.0.168.192.in-addr.arpa	name = 2c:f0:5d:a6:97:55.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+22.0.168.192.in-addr.arpa	name = Sadiq-s-S23-FE.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+23.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+24.0.168.192.in-addr.arpa	name = DESKTOP-BIJOGKV.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+25.0.168.192.in-addr.arpa	name = Sadiq-s-S23-FE.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+26.0.168.192.in-addr.arpa	name = IPC.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+27.0.168.192.in-addr.arpa	name = Samsung.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+28.0.168.192.in-addr.arpa	name = RE550.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+29.0.168.192.in-addr.arpa	name = 0a:db:4c:80:39:4a.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+30.0.168.192.in-addr.arpa	name = C520WS.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+31.0.168.192.in-addr.arpa	name = fa:dc:df:09:c5:68.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+32.0.168.192.in-addr.arpa	name = d4:a3:eb:75:57:2a.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+33.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+34.0.168.192.in-addr.arpa	name = Gulmina-s-S22.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+35.0.168.192.in-addr.arpa	name = C520WS.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+36.0.168.192.in-addr.arpa	name = KS225.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+37.0.168.192.in-addr.arpa	name = SYNC.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+38.0.168.192.in-addr.arpa	name = KS225.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+39.0.168.192.in-addr.arpa	name = 09AA01AJ3923045F.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+40.0.168.192.in-addr.arpa	name = iPad.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+41.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+42.0.168.192.in-addr.arpa	name = DESKTOP-1S548B7.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+43.0.168.192.in-addr.arpa	name = Tram.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+44.0.168.192.in-addr.arpa	name = John-Christian-s-S24.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+45.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+46.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+47.0.168.192.in-addr.arpa	name = DESKTOP-BRCG94S.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+48.0.168.192.in-addr.arpa	name = K83CA.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+49.0.168.192.in-addr.arpa	name = Sol_Laptop.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+50.0.168.192.in-addr.arpa	name = mkspi.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+51.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+52.0.168.192.in-addr.arpa	name = Nazmina-s-S24-Ultra.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+53.0.168.192.in-addr.arpa	name = ce:62:54:10:64:a5.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+54.0.168.192.in-addr.arpa	name = RE550.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+55.0.168.192.in-addr.arpa	name = SYNC.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+56.0.168.192.in-addr.arpa	name = OPPO-A31.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 57.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+58.0.168.192.in-addr.arpa	name = raziq-s-S24-Ultra.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+59.0.168.192.in-addr.arpa	name = ce:80:42:67:90:83.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 60.0.168.192.in-addr.arpa: NXDOMAIN
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+61.0.168.192.in-addr.arpa	name = LGwebOSTV.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+62.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+63.0.168.192.in-addr.arpa	name = firestick-59230b1c5226dec4.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+64.0.168.192.in-addr.arpa	name = iPhone.hitronhub.home.
+Server:		192.168.0.1
+Address:	192.168.0.1#53
+
+** server can't find 65.0.168.192.in-addr.arpa: NXDOMAIN

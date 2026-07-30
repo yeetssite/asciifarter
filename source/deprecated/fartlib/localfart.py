@@ -11,7 +11,7 @@ import time
 # depending on user option and system types (eg. normal Linux, 
 # Termux, which is basically Linux on an Android phone, MacOS
 # and Windows).
-FartDir = os.environ["HOME"]+"/Library/.asciiFarter/art/"
+FartDir = os.environ["HOME"]+"/Documents/.asciiFarter/art/"
 local_arts = os.listdir(FartDir)
 for art in local_arts:
     if '.txt' not in art:

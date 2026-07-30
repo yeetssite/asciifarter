@@ -12,7 +12,7 @@ new_art = ''
 error_opener = str("[31m"+str(__file__)+": Error:")
 # Open status.xml and add some of it's contents to the art_list
 try:
-    with request.urlopen("https://yeetssite.github.io/asciifarter/status.xml") as status_file:
+    with request.urlopen("https://yeetssite.github.io/asciifarter/status.xml", timeout=4) as status_file:
         status_text = status_file.read().decode('utf-8')
         status = bs4.BeautifulSoup(status_text, 'xml')
         art_names = status.find('asciiArtsNames')
@@ -32,7 +32,7 @@ class random_art:
         while check_art_size:
             for x in range(randomness):
                 self.name = random.choice(art_list) # choose a random art's filename from the art_list
-            with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file: # open that random art's url
+            with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name, timeout=10) as art_file: # open that random art's url
                 self.File = art_file # save the file-like object as an attribute
                 self.text = art_file.read().decode('utf-8') # convert the file-like object into a string
             terminal_width = os.get_terminal_size().columns
@@ -57,7 +57,7 @@ class newest_art:
     def __init__(self):
         self.name = new_art
         try:
-            with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file:
+            with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name, timeout=10) as art_file:
                 self.File = art_file
                 self.text = art_file.read().decode('utf-8')
         except:
@@ -89,7 +89,7 @@ class find_art:
 
         if self.found:
             try:
-                with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name) as art_file:
+                with request.urlopen('https://yeetssite.github.io/asciifarter/'+self.name, timeout=10) as art_file:
                     self.File = art_file
                     self.text = art_file.read().decode('utf-8')
             except error.URLError:

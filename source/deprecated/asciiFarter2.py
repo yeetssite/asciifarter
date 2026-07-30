@@ -113,4 +113,6 @@ COMMANDs:
     
         
 else:
-    pass
+    fart = getfart.random_art()
+    fart.poop()
+
