@@ -1,6 +1,6 @@
-
 /*
-stylesheet created and "formatted"(aka written like shit) by Jacob hache: <https://github.com/mangolover1899>*/
+  stylesheet created and "formatted"(aka written like shit) by Jacob hache: <https://github.com/mangolover1899>
+*/
 
 /*########################
   # GENERAL FORMAT/STYLE #
@@ -16,9 +16,9 @@ stylesheet created and "formatted"(aka written like shit) by Jacob hache: <https
   position: relative;
   text-align: center!important;
   transition: ease-in 0.1s;
-  border: 2.0px solid #8c92ff;
-  background-color: #000314;
-  background-image: url(../img/moincraft.jpg);
+  border: 2.0px solid #c63951;
+  background-color: #2d0007;
+  background-image: url(../img/HECANTKEEPGETTINGAWAYWIHDIS.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: scroll;
@@ -31,19 +31,19 @@ stylesheet created and "formatted"(aka written like shit) by Jacob hache: <https
   border-bottom: none!important;
   padding: none;
   font-size: 32px;
-  color: #8c92ff;
+  color: #c63951;
   transition: ease-in 0.1s;
   text-align: center;
 }
 
 .logo .logotext:hover{
-  color: #c4c7ff;
+  color: #e87a8d;
   transition: ease-in 0.1s;
   font-size: 34px;
 }
 
 .logo .logotext:active{
-  color: #8c92ff;
+  color: #c63951;
   transition: ease-in 0.1s;
   font-size: 27px;
 }
@@ -53,19 +53,19 @@ stylesheet created and "formatted"(aka written like shit) by Jacob hache: <https
   border-bottom: none!important; 
   padding: none;
   font-size: 28px;
-  color: #8c92ff;
+  color: #c63951;
   transition: ease-in 0.1s;
   text-align: center;
 }
 
 .logo .logotext:hover{
-  color: #c4c7ff;
+  color: #e87a8d;
   transition: ease-in 0.1s;
   font-size: 30px;
 }
 
 .logo .logotext:active{
-  color: #8c92ff;
+  color: #c63951;
   transition: ease-in 0.1s;
   font-size: 23px;
 }}
@@ -75,25 +75,25 @@ stylesheet created and "formatted"(aka written like shit) by Jacob hache: <https
   border-bottom: none!important;
   padding: none;
   font-size: 28px;
-  color: #8c92ff;
+  color: #c63951;
   transition: ease-in 0.1s;
   text-align: center;
 }
 	
 .logo .logotext:hover{
-  color: #c4c7ff;
+  color: #e87a8d;
   transition: ease-in 0.1s;
   font-size: 32px;
 }
 
 .logo .logotext:active{
-  color: #8c92ff;
+  color: #c63951;
   transition: ease-in 0.1s;
   font-size: 23px;
 }}	
 	
 .logo:hover{
-  border: 3px solid #c4c7ff;
+  border: 3px solid #e87a8d;
   background-color: #06020a;
   border-radius: 9px / 7px;
   padding: 7px;
@@ -101,8 +101,8 @@ stylesheet created and "formatted"(aka written like shit) by Jacob hache: <https
 }
 
 .logo:active{
-  background-color: #000314;
-  border: 2.0px solid #8c92ff;
+  background-color: #2d0007;
+  border: 2.0px solid #c63951;
   border-radius: 4px / 2px;
   padding: 2px;
   transition: ease-in 0.1s;
@@ -112,7 +112,6 @@ code,pre{
   background-color: #0f0306;
   font-family: 'Ubuntu Mono', 'Courier new', cousine, monospace;
   color: #dcc3eb;
-  overflow-x: auto;
   border: 1px solid #dcc3eb;
   border-radius: 2px;
   padding: 2px;
@@ -139,9 +138,9 @@ a[href]:active{
 
 /*My dumbass forgot to paste the linkbar in after cutting it*/
 .linkbar {
-background-color: #000314;
+background-color: #2d0007;
 border-radius: 7px / 5px;
-border: 2.0px solid #8c92ff;
+border: 2.0px solid #c63951;
 padding-bottom: none;
 padding: 5px;
 text-align: center;
@@ -150,23 +149,23 @@ transition: ease-out 0.1s;
 
 .linkbar:hover {
 background-color: #06020a;
-border: 3px solid #c4c7ff;
+border: 3px solid #e87a8d;
 border-radius: 9px / 7px;
 padding: 7px;
 transition: ease-in 0.1s;
 }
 
 .linkbar:hover:active {
-border: 2.0px solid #8c92ff;
-background-color: #000314;
+border: 2.0px solid #c63951;
+background-color: #2d0007;
 border-radius: 4px / 2px;
 transition: ease-in 0.1s;
 padding: 2px;
 }
 
 .linkbar:active {
-border: 2.0px solid #8c92ff;
-background-color: #000314;
+border: 2.0px solid #c63951;
+background-color: #2d0007;
 border-radius: 4px / 2px;
 transition: ease-in 0.1s;
 padding: 2px;
@@ -197,18 +196,18 @@ margin-top: 0px;
 
 .linkbar a{
   font-family: "Montserrat", "Ubuntu", "Poppins", "Verdana", sans-serif;
-  color: #8c92ff;
+  color: #c63951;
   transition: ease-in 0.1s;
 }
 
 .linkbar a:hover {
-  color: #c4c7ff;
+  color: #e87a8d;
   font-size: 18px;
   transition: ease-in 0.1s;
 }
 
 .linkbar a:active {
-  color: #8c92ff;
+  color: #c63951;
   font-size: 12px;
   transition: ease-in 0.1s;
 }
@@ -225,10 +224,10 @@ pre code{
 
 
 body{ 
-     background-color: #00051f;
+     background-color: #44000b;
      background-size: 2em;
-     background: linear-gradient(180deg,rgba(0, 5, 31, 1) 45%, rgba(74, 15, 89, 1) 96%);
-     color: #8c92ff;
+     background: linear-gradient(180deg,rgba(73, 3, 10, 1) 45%, rgba(137, 46, 1, 1) 96%);
+     color: #c63951;
      font-family: "Montserrat", "Poppins", "Ubuntu", "hevetica neue", sans-serif;
      font-weight: 500;
      font-size: 14px;
@@ -262,7 +261,7 @@ footer{
 /*Image window*/
 
 img{
-  border: 2.0px solid #8c92ff;
+  border: 2.0px solid #c63951;
   border-radius: 7px / 5px;
   width: auto;
   height: auto;
@@ -276,14 +275,14 @@ img{
 
 img:hover{
   transform: scale(1.05);
-  border: 3px solid #c4c7ff;
+  border: 3px solid #e87a8d;
   border-radius: 9px / 7px;
   transition: ease-in 0.05s;
 }
 
 img:active{
    transform: scale(0.90);
-   border: 2.0px solid #8c92ff;
+   border: 2.0px solid #c63951;
    border-radius: 4px / 2px;
    transition: ease-in 0.05s;
 
@@ -291,7 +290,7 @@ img:active{
 
 img:hover:active{
    transform: scale(0.90);
-   border: 2.0px solid #8c92ff;
+   border: 2.0px solid #c63951;
    border-radius: 4px / 2px;
    transition: ease-in 0.05s;
 
@@ -305,67 +304,7 @@ video {
   display: block;
 }
 
-/*Jekylls shitass posts*/
-.posts
-{
-  background-color: #00030f;
-  background: radial-gradient(circle,rgba(0, 3, 15, 1) 0%, rgba(9, 6, 56, 1) 40%, rgba(34, 18, 94, 1) 76%, rgba(82, 39, 150, 1) 100%);
-  backdrop-filter: blur(2px);
-	color: #bcc3eb;
-	border: 2px solid #bcc3eb;
-	border-radius: 7px/5px;
-	padding: 2px;
-  padding-top: 10px;
-}
-.snippet{
-  background: 
-  radial-gradient(circle,
-                  rgba(0, 31, 13, 1) 0%, 
-                  rgba(2, 43, 20, 0.8) 40%, 
-                  rgba(10, 64, 29, 0.5) 76%, 
-                  rgba(25, 94, 52, 0.2) 100%);
-  backdrop-filter: blur(0.5px);
-	background-color: #001f0d;
-	color: #edfff5;
-	margin: 5px;
-  margin-top: -2px;
-  margin-bottom: 5px;
-	border: 2px solid #edfff5;
-	border-radius: 5px / 7px;
-  
-}
-.snippet .title
-{
-  backdrop-filter: blur(6.7px); /*six seveeennnn 🤪🤪🤪*/
-  background-color: rgba(25, 94, 52, 0.5);
-	color: #edfff5;
-	font-size: 24px;
-	font-weight: 700;
-	padding: 5px;
-  margin-top: -16px;
-  margin-left: -2px;
-  margin-right: -2px;
-  border-radius: 5px / 7px;
-	border: 2px solid #edfff5;
-}
-
-.title a{
-	color: #edfff5;
-        font-size: 24px;
-        font-weight: 700;
-}
-
-.snippet .body
-{
-	padding: 5px;
-}
-.snippet .body h1, h2, h3, h4, h5{
-	text-align: left;
-}
-
 /*fontrs*/
-
-/*rdr font*/
 @font-face {
   font-family: redDeadFont;
   src: url(/fonts/chineseRocksRegular.ttf);
@@ -379,12 +318,10 @@ video {
 }
 .rdrtextred
 {
-	color: #DD0000;
+	color: #FF0000;
         font-size: 20px;
         font-family: redDeadFont;
 }
-
-/**/
 
 /*Error page-specific elements*/
 
